@@ -1,3 +1,5 @@
+#!/bash/bin
+
 YOURPORT=8080
 PERM="--permanent"
 SERV="$PERM --service=jenkins"
@@ -9,3 +11,4 @@ firewall-cmd $SERV --add-port=$YOURPORT/tcp
 firewall-cmd $PERM --add-service=jenkins
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --reload
+echo "Firewall configured!"
