@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 YOURPORT=8080
 PERM="--permanent"
